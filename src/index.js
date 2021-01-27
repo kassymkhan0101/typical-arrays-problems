@@ -1,8 +1,7 @@
 
 exports.min = function min (array) {
     try {
-        console.log(array.length);
-        if(array.length == 0){
+        if(!array || array.length == 0){
             return 0;
         }
         return Math.min.apply(0, array);
@@ -14,7 +13,7 @@ exports.min = function min (array) {
 
 exports.max = function max (array) {
     try { 
-        if(array.length == 0){
+        if(!array || array.length == 0){
             return 0;
         }
         return Math.max.apply(0, array);
