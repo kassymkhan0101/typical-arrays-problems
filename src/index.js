@@ -1,7 +1,7 @@
 
 exports.min = function min (array) {
     try {
-  return array.reduce((a, b) => Math.min(a, b);}
+        Math.min.apply(Math, array);
     catch {
     return 0;
     }
@@ -9,7 +9,7 @@ exports.min = function min (array) {
 
 exports.max = function max (array) {
     try { 
-  return array.reduce((a, b) => Math.max(a, b);}
+        Math.max.apply(Math, array);
     catch { return 0;}
 }
 
