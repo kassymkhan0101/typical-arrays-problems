@@ -2,6 +2,7 @@
 exports.min = function min (array) {
     try {
         Math.min.apply(Math, array);
+    }
     catch {
     return 0;
     }
@@ -10,6 +11,7 @@ exports.min = function min (array) {
 exports.max = function max (array) {
     try { 
         Math.max.apply(Math, array);
+    }
     catch { return 0;}
 }
 
