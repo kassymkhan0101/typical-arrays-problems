@@ -1,7 +1,7 @@
 
 exports.min = function min (array) {
     try {
-        Math.min.apply(Math, array);
+        return Math.min.apply(Math, array);
     }
     catch {
     return 0;
